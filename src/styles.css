@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+.jumbotron {
+    background-color:#E95420 !important; 
+}
+
+body {
+    background-color: #FDEEE9;
+    color: #111;
+    font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.logo {
+    height: 200pt;
+}
