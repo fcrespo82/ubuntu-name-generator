@@ -82,10 +82,7 @@ export const ubuntu_names = {
             "Axolotl",
             "Aye Aye"
         ],
-        "version": {
-            "initial_year": 17,
-            "month": 10
-        }
+        "version": { "initial_year": 17, "month": 10 }
     },
     "b": {
         "adjectives": [
@@ -134,10 +131,7 @@ export const ubuntu_names = {
             "Bull",
             "Bunny"
         ],
-        "version": {
-            "initial_year": 18,
-            "month": 4
-        }
+        "version": { "initial_year": 18, "month": 4 }
     },
     "c": {
         "adjectives": [
@@ -208,10 +202,7 @@ export const ubuntu_names = {
             "Crocodile",
             "Crow"
         ],
-        "version": {
-            "initial_year": 18,
-            "month": 10
-        }
+        "version": { "initial_year": 18, "month": 10 }
     },
     "d": {
         "adjectives": [
@@ -251,10 +242,7 @@ export const ubuntu_names = {
             "Dungbeetle",
             "Dzo"
         ],
-        "version": {
-            "initial_year": 19,
-            "month": 4
-        }
+        "version": { "initial_year": 19, "month": 4 }
     },
     "e": {
         "adjectives": [
@@ -302,10 +290,7 @@ export const ubuntu_names = {
             "Euglena",
             "Ewe"
         ],
-        "version": {
-            "initial_year": 19,
-            "month": 10
-        }
+        "version": { "initial_year": 19, "month": 10 }
     },
     "f": {
         "adjectives": [
@@ -366,10 +351,7 @@ export const ubuntu_names = {
             "Fugu",
             "Furbolg"
         ],
-        "version": {
-            "initial_year": 20,
-            "month": 4
-        }
+        "version": { "initial_year": 20, "month": 4 }
     },
     "g": {
         "adjectives": [
@@ -437,10 +419,7 @@ export const ubuntu_names = {
             "Guppy",
             "Gurk"
         ],
-        "version": {
-            "initial_year": 20,
-            "month": 10
-        }
+        "version": { "initial_year": 20, "month": 10 }
     },
     "h": {
         "adjectives": [
@@ -492,10 +471,7 @@ export const ubuntu_names = {
             "Hyena",
             "Hypnotoad"
         ],
-        "version": {
-            "initial_year": 20,
-            "month": 4
-        }
+        "version": { "initial_year": 20, "month": 4 }
     },
     "i": {
         "adjectives": [
@@ -598,10 +574,7 @@ export const ubuntu_names = {
             "Iuticosaurus",
             "Ivory"
         ],
-        "version": {
-            "initial_year": 21,
-            "month": 10
-        }
+        "version": { "initial_year": 21, "month": 10 }
     },
     "j": {
         "adjectives": [
@@ -658,10 +631,7 @@ export const ubuntu_names = {
             "Junco",
             "Junebug"
         ],
-        "version": {
-            "initial_year": 22,
-            "month": 4
-        }
+        "version": { "initial_year": 22, "month": 4 }
     },
     "k": {
         "adjectives": [
@@ -734,10 +704,7 @@ export const ubuntu_names = {
             "Krocodile",
             "Kudu"
         ],
-        "version": {
-            "initial_year": 22,
-            "month": 10
-        }
+        "version": { "initial_year": 22, "month": 10 }
     },
     "l": {
         "adjectives": [
@@ -807,10 +774,7 @@ export const ubuntu_names = {
             "lycaon",
             "Lynx"
         ],
-        "version": {
-            "initial_year": 23,
-            "month": 4
-        }
+        "version": { "initial_year": 23, "month": 4 }
     },
     "m": {
         "adjectives": [
@@ -947,10 +911,7 @@ export const ubuntu_names = {
             "Mutt",
             "Myna"
         ],
-        "version": {
-            "initial_year": 23,
-            "month": 10
-        }
+        "version": { "initial_year": 23, "month": 10 }
     },
     "n": {
         "adjectives": [
@@ -990,10 +951,7 @@ export const ubuntu_names = {
             "Nutria",
             "Nymph"
         ],
-        "version": {
-            "initial_year": 24,
-            "month": 4
-        }
+        "version": { "initial_year": 24, "month": 4 }
     },
     "o": {
         "adjectives": [
@@ -1047,10 +1005,7 @@ export const ubuntu_names = {
             "Ox",
             "Oyster"
         ],
-        "version": {
-            "initial_year": 24,
-            "month": 10
-        }
+        "version": { "initial_year": 24, "month": 10 }
     },
     "p": {
         "adjectives": [
@@ -1160,10 +1115,7 @@ export const ubuntu_names = {
             "Puma",
             "Python"
         ],
-        "version": {
-            "initial_year": 25,
-            "month": 4
-        }
+        "version": { "initial_year": 25, "month": 4 }
     },
     "q": {
         "adjectives": [
@@ -1191,10 +1143,7 @@ export const ubuntu_names = {
             "Quokka",
             "Quoll"
         ],
-        "version": {
-            "initial_year": 25,
-            "month": 10
-        }
+        "version": { "initial_year": 25, "month": 10 }
     },
     "r": {
         "adjectives": [
@@ -1251,10 +1200,7 @@ export const ubuntu_names = {
             "Rooster",
             "Rottweiler"
         ],
-        "version": {
-            "initial_year": 26,
-            "month": 4
-        }
+        "version": { "initial_year": 26, "month": 4 }
     },
     "s": {
         "adjectives": [
@@ -1382,10 +1328,7 @@ export const ubuntu_names = {
             "Swan",
             "Swordfish"
         ],
-        "version": {
-            "initial_year": 26,
-            "month": 10
-        }
+        "version": { "initial_year": 26, "month": 10 }
     },
     "t": {
         "adjectives": [
@@ -1489,10 +1432,7 @@ export const ubuntu_names = {
             "Tazzy-Thylacine",
             "Tesselated"
         ],
-        "version": {
-            "initial_year": 27,
-            "month": 4
-        }
+        "version": { "initial_year": 27, "month": 4 }
     },
     "u": {
         "adjectives": [
@@ -1538,10 +1478,7 @@ export const ubuntu_names = {
             "Umbrian",
             "Uintathere"
         ],
-        "version": {
-            "initial_year": 27,
-            "month": 10
-        }
+        "version": { "initial_year": 27, "month": 10 }
     },
     "v": {
         "adjectives": [
@@ -1574,10 +1511,7 @@ export const ubuntu_names = {
             "Vole",
             "Vulture"
         ],
-        "version": {
-            "initial_year": 28,
-            "month": 4
-        }
+        "version": { "initial_year": 28, "month": 4 }
     },
     "w": {
         "adjectives": [
@@ -1613,10 +1547,7 @@ export const ubuntu_names = {
             "Wren",
             "Weka"
         ],
-        "version": {
-            "initial_year": 28,
-            "month": 10
-        }
+        "version": { "initial_year": 28, "month": 10 }
     },
     "x": {
         "adjectives": [
@@ -1645,10 +1576,7 @@ export const ubuntu_names = {
             "Xoloitzcuintle",
             "Xólotl"
         ],
-        "version": {
-            "initial_year": 29,
-            "month": 4
-        }
+        "version": { "initial_year": 29, "month": 4 }
     },
     "y": {
         "adjectives": [
@@ -1667,10 +1595,7 @@ export const ubuntu_names = {
             "Yellowjacket",
             "Yeti"
         ],
-        "version": {
-            "initial_year": 29,
-            "month": 10
-        }
+        "version": { "initial_year": 29, "month": 10 }
     },
     "z": {
         "adjectives": [
@@ -1690,9 +1615,6 @@ export const ubuntu_names = {
             "Zorilla",
             "Zorse"
         ],
-        "version": {
-            "initial_year": 30,
-            "month": 4
-        }
+        "version": { "initial_year": 30, "month": 4 }
     }
 }
