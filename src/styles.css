@@ -16,3 +16,8 @@ body {
 .logo {
     height: 200pt;
 }
+
+.realNames {
+    max-height: 40vh;
+    overflow-y: scroll;
+}

@@ -1,0 +1,1 @@
+ng build -prod -bh "http://ubuntu-name-generator.crespo.com.br" -op docs

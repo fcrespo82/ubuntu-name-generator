@@ -6,7 +6,7 @@
   "apps": [
     {
       "root": "src",
-      "outDir": "dist",
+      "outDir": "docs",
       "assets": [
         "assets",
         "favicon.ico"
@@ -62,7 +62,7 @@
     },
     "component": {
       "inlineStyle": true,
-      "inlineTemplate": true,
+      "inlineTemplate": false,
       "spec": false
     },
     "directive": {

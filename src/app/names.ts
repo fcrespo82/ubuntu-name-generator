@@ -1,4 +1,43 @@
-{
+export const actual_names = [
+    {
+        "name": "Warthy Warthog",
+        "version":"4.10"
+    },
+    {
+        "name": "Hoary Hedgehod",
+        "version":"5.04"
+    },
+    {
+        "name": "Breezy Badger",
+        "version":"5.10"
+    },
+    {
+        "name": "Dapper Drake",
+        "version":"6.06 LTS"
+    },
+    {
+        "name": "Edgy Eft",
+        "version":"6.10"
+    },
+    {
+        "name": "Feisty Fawn",
+        "version":"7.04"
+    },
+    {
+        "name": "Gutsy Gibbon",
+        "version":"7.10"
+    },
+    {
+        "name": "Hardy Heron",
+        "version":"8.04"
+    },
+    {
+        "name": "Intrepid Ibex",
+        "version":"8.10"
+    }
+]
+
+export const ubuntu_names = {
     "a": {
         "adjectives": [
             "Able",
@@ -29,17 +68,18 @@
             "Antlered"
         ],
         "animals": [
-            "Aardvark",
             "Aal",
+            "Aardvark",
             "Affenpinscher",
             "Agama",
             "Albatross",
+            "Alebrije",
+            "Alien",
             "Alligator",
-            "Alliteration",
             "Alpaca",
             "Amoeba",
-            "Angelfish",
             "Anemone",
+            "Angelfish",
             "Anoa",
             "Ant",
             "Anteater",
@@ -48,10 +88,14 @@
             "Arachnid",
             "Armadillo",
             "Asp",
-            "Alien",
+            "Avocet",
             "Axolotl",
-            "Alebrije"
-        ]
+            "Aye Aye"
+        ],
+        "version": {
+            "initial_year": 17,
+            "month": 10
+        }
     },
     "b": {
         "adjectives": [
@@ -96,10 +140,14 @@
             "Bonobo",
             "Bothrop",
             "Bowerbird",
-            "Bunny",
             "Buck",
-            "Bull"
-        ]
+            "Bull",
+            "Bunny"
+        ],
+        "version": {
+            "initial_year": 18,
+            "month": 4
+        }
     },
     "c": {
         "adjectives": [
@@ -140,8 +188,9 @@
         "animals": [
             "Camel",
             "Capybara",
-            "Cardinal",
             "Caracal",
+            "Cardinal",
+            "Caribou",
             "Cassowary",
             "Cat",
             "Caterpillar",
@@ -164,12 +213,15 @@
             "Cougar",
             "Cow",
             "Coyote",
+            "Crab",
             "Crane",
             "Crocodile",
-            "Crow",
-            "Crab",
-            "Caribou"
-        ]
+            "Crow"
+        ],
+        "version": {
+            "initial_year": 18,
+            "month": 10
+        }
     },
     "d": {
         "adjectives": [
@@ -195,20 +247,24 @@
             "Dingo",
             "Diplodocus",
             "Dodo",
+            "Doe",
             "Dog",
             "Dolphin",
+            "Donkey",
             "Dormouse",
             "Dove",
             "Dragon",
-            "Dzo",
             "Drake",
+            "Dryad",
             "Duck",
             "Dugong",
             "Dungbeetle",
-            "Doe",
-            "Dryad",
-            "Donkey"
-        ]
+            "Dzo"
+        ],
+        "version": {
+            "initial_year": 19,
+            "month": 4
+        }
     },
     "e": {
         "adjectives": [
@@ -240,6 +296,7 @@
         ],
         "animals": [
             "Eagle",
+            "Eagle",
             "Earthworm",
             "Earwig",
             "Echidna",
@@ -247,15 +304,18 @@
             "Eft",
             "Eland",
             "Elephant",
-            "Eagle",
             "Elf",
             "Elk",
             "Emu",
-            "Escargot",
             "Ermine",
+            "Escargot",
             "Euglena",
             "Ewe"
-        ]
+        ],
+        "version": {
+            "initial_year": 19,
+            "month": 10
+        }
     },
     "f": {
         "adjectives": [
@@ -298,8 +358,8 @@
             "Fawn",
             "Feline",
             "Fenestrator",
-            "Fennec",
             "Fenix",
+            "Fennec",
             "Ferret",
             "Fieldmouse",
             "Finch",
@@ -307,15 +367,19 @@
             "Firefly",
             "Fish",
             "Flamingo",
-            "Fly",
             "Flight",
+            "Fly",
             "Foundling",
             "Fox",
             "Frog",
-            "Fugu",
             "Fruitbat",
+            "Fugu",
             "Furbolg"
-        ]
+        ],
+        "version": {
+            "initial_year": 20,
+            "month": 4
+        }
     },
     "g": {
         "adjectives": [
@@ -360,6 +424,7 @@
             "Gecko",
             "Gelding",
             "Gerbil",
+            "Ghost",
             "Gibbon",
             "Giraffe",
             "Gnarwhal",
@@ -377,17 +442,20 @@
             "Groundhog",
             "Grue",
             "Gryphon",
-            "Gull",
             "Guanaco",
-            "Gurk",
+            "Gull",
             "Guppy",
-            "Ghost"
-        ]
+            "Gurk"
+        ],
+        "version": {
+            "initial_year": 20,
+            "month": 10
+        }
     },
     "h": {
         "adjectives": [
-            "Happy",
             "Hairy",
+            "Happy",
             "Hardy",
             "Haughty",
             "Hazardous",
@@ -403,11 +471,11 @@
             "Horny",
             "Horrible",
             "Hot",
+            "Howling",
             "Huge",
             "Humble",
-            "Humpin",
-            "Howling",
             "Humourous",
+            "Humpin",
             "Hungry",
             "Hyperactive"
         ],
@@ -418,8 +486,8 @@
             "Hartebeest",
             "Hawk",
             "Hedgehog",
-            "Hen",
             "Heffalump",
+            "Hen",
             "Heron",
             "Hippo(potamus)",
             "Hoopoe",
@@ -430,24 +498,28 @@
             "Human",
             "Hummingbird",
             "Humpback",
-            "Hyena",
             "Husky",
+            "Hyena",
             "Hypnotoad"
-        ]
+        ],
+        "version": {
+            "initial_year": 20,
+            "month": 4
+        }
     },
     "i": {
         "adjectives": [
-            "Interstellar",
             "Icky",
             "Icy",
             "Idyllic",
             "Iffy",
-            "Ignited",
             "Igneous",
+            "Ignited",
             "Illuminating",
             "Illustrious",
             "Immodest",
             "Immortal",
+            "Impish",
             "Impressive",
             "Incendiary",
             "Incomparable",
@@ -456,8 +528,8 @@
             "Incredible",
             "Incriminatory",
             "Indefatigable",
-            "Industrious",
             "Indelible",
+            "Industrious",
             "Inebriated",
             "Ineffable",
             "Inescapable",
@@ -471,7 +543,6 @@
             "Ingratiating",
             "Initiatory",
             "Inky",
-            "Impish",
             "Innocent",
             "Innovatory",
             "Inquisitive",
@@ -481,8 +552,8 @@
             "Insightful",
             "Insolent",
             "Insouciant",
-            "Inspired",
             "Inspirational",
+            "Inspired",
             "Insurgent",
             "Intelligent",
             "Interagency",
@@ -490,64 +561,64 @@
             "Intercessory",
             "Intercity",
             "Intermediary",
+            "Interstellar",
             "Intervarsity",
             "Intimate",
             "Intimidated",
             "Intrepid",
+            "Investigatory",
             "Irate",
             "Iridescent",
             "Irie",
             "Irksome",
             "Irrefutable",
-            "Itchy",
-            "Investigatory"
+            "Itchy"
         ],
         "animals": [
             "Ibex",
-            "Indri",
             "Ibis",
-            "Icebear",
-            "Iceweasel",
-            "Ichtiosaurus",
-            "Ichthyosaur",
-            "Ifrit",
-            "Iguana",
-            "Impala",
-            "Indri",
-            "Insect",
-            "Inkanyamba",
-            "Imp",
-            "Iguana",
-            "Isopoda",
-            "Irukandji",
-            "Ivory",
             "Ichabodcraniosaurus",
+            "Ichthyosaur",
+            "Iguana",
+            "Iguana",
+            "Iguana",
             "Iguanodon",
-            "Iguanoides",
             "Iguanosaurus",
             "Iliosuchus",
             "Ilokelesia",
+            "Imp",
+            "Impala",
             "Incisivosaurus",
             "Indosaurus",
             "Indosuchus",
+            "Indri",
             "Ingenia",
+            "Inkanyamba",
             "Inosaurus",
+            "Insect",
             "Irritator",
+            "Irukandji",
             "Isanosaurus",
             "Ischisaurus",
             "Ischyrosaurus",
             "Isisaurus",
+            "Isopoda",
             "Issasaurus",
             "Itemirus",
-            "Iuticosaurus"
-        ]
+            "Iuticosaurus",
+            "Ivory"
+        ],
+        "version": {
+            "initial_year": 21,
+            "month": 10
+        }
     },
     "j": {
         "adjectives": [
             "Jabbering",
             "Jaded",
-            "Jaunty",
             "Jaundice",
+            "Jaunty",
             "Jazzy",
             "Jealous",
             "Jiggly",
@@ -578,34 +649,38 @@
             "Juvenile"
         ],
         "animals": [
-            "Jaybird",
-            "Junebug",
             "Jabberwock",
             "Jacana",
             "Jackal",
             "Jackalope",
             "Jackass",
             "Jackrabbit",
+            "Jackrabbit",
             "Jaguar",
             "Javelina",
             "Jay",
+            "Jaybird",
             "Jellyfish",
-            "Jackrabbit",
+            "Jentink's",
             "Jerboa",
             "Joey",
-            "Jentink's",
             "Jubata",
-            "Junco"
-        ]
+            "Junco",
+            "Junebug"
+        ],
+        "version": {
+            "initial_year": 22,
+            "month": 4
+        }
     },
     "k": {
         "adjectives": [
-            "Katie",
             "Kafkaesque",
             "Kaleidoscopic",
             "Kamikaze",
             "Kanny",
             "Karmic",
+            "Katie",
             "Kayoed",
             "Keeking",
             "Keen",
@@ -619,15 +694,15 @@
             "Kilted",
             "Kind",
             "Kindhearted",
-            "Kingly",
-            "Klutzy",
             "Kinetic",
             "King-sized",
+            "Kingly",
             "Kinky",
             "Kissable",
             "Kissy",
             "Kitschy",
             "Kleptomaniacal",
+            "Klutzy",
             "Knavish",
             "Knightly",
             "Knobby",
@@ -649,15 +724,15 @@
             "Kingfisher",
             "Kinkajou",
             "Kite",
-            "Kittie",
             "Kitten",
+            "Kittie",
             "Kittiwake",
             "Kittyhawk",
             "Kiwi",
             "Knight",
             "Koala",
-            "Kodkod",
             "Kodiak",
+            "Kodkod",
             "Koi",
             "Kolibri",
             "Komodo",
@@ -665,10 +740,14 @@
             "Kookaburra",
             "Kouprey",
             "Kowari",
-            "Kudu",
             "Kraut",
-            "Krocodile"
-        ]
+            "Krocodile",
+            "Kudu"
+        ],
+        "version": {
+            "initial_year": 22,
+            "month": 10
+        }
     },
     "l": {
         "adjectives": [
@@ -718,26 +797,30 @@
             "Lapwing",
             "Lark",
             "Leafhopper",
-            "Leopon",
             "Leech",
             "Lemming",
             "Lemur",
             "Leopard",
+            "Leopon",
             "Liger",
             "Limpet",
             "Lion",
             "Lizard",
             "Llama",
             "Lobster",
+            "Longhorn",
             "Loompa",
             "Loon",
-            "Longhorn",
             "Lorax",
             "Loris",
             "Louse",
             "lycaon",
             "Lynx"
-        ]
+        ],
+        "version": {
+            "initial_year": 23,
+            "month": 4
+        }
     },
     "m": {
         "adjectives": [
@@ -818,8 +901,8 @@
             "Murphy",
             "Muscled",
             "Mushy",
-            "Musky",
             "Musical",
+            "Musky",
             "Muttering",
             "Myriad",
             "Mysterious",
@@ -836,16 +919,16 @@
             "Mallard",
             "Mammoth",
             "Man",
-            "Mandrill",
             "Manatee",
+            "Mandrill",
             "Manta",
             "Mantis",
             "Mara",
-            "Mastiff",
             "Marlin",
             "Marmot",
             "Marsupilami",
             "Marten",
+            "Mastiff",
             "Meadowlark",
             "Meerkat",
             "Millipede",
@@ -859,6 +942,7 @@
             "Monal",
             "Monca",
             "Mongoose",
+            "Monitor",
             "Monkey",
             "Moose",
             "Mosquito",
@@ -866,14 +950,17 @@
             "Motmot",
             "Mouflon",
             "Mouse",
-            "Muskrat",
-            "Muskox",
-            "Monitor",
             "Mule",
+            "Muskox",
+            "Muskrat",
             "Mustang",
             "Mutt",
             "Myna"
-        ]
+        ],
+        "version": {
+            "initial_year": 23,
+            "month": 10
+        }
     },
     "n": {
         "adjectives": [
@@ -912,7 +999,11 @@
             "Numbat",
             "Nutria",
             "Nymph"
-        ]
+        ],
+        "version": {
+            "initial_year": 24,
+            "month": 4
+        }
     },
     "o": {
         "adjectives": [
@@ -922,13 +1013,13 @@
             "Obsequious",
             "Observing",
             "Obstreperous",
-            "Obverse",
             "Obtuse",
+            "Obverse",
             "Obvious",
-            "Odd",
             "Occult",
             "Octal",
             "Octennial",
+            "Odd",
             "Oily",
             "Okay",
             "Omnific",
@@ -965,7 +1056,11 @@
             "Owl",
             "Ox",
             "Oyster"
-        ]
+        ],
+        "version": {
+            "initial_year": 24,
+            "month": 10
+        }
     },
     "p": {
         "adjectives": [
@@ -979,9 +1074,9 @@
             "Pedantic",
             "Perceptive",
             "Perennial",
-            "Persnickety",
             "Perky",
             "Persistent",
+            "Persnickety",
             "Perverse",
             "Phantastic",
             "Phantom",
@@ -989,32 +1084,30 @@
             "Philantropic",
             "Philosophical",
             "Phlegmatic",
+            "Phlegmatic",
             "Phobic",
             "Phooka",
-            "Phlegmatic",
             "Photogenic",
-            "Playful",
-            "Psychedelic",
-            "Psychic",
             "Pickled",
             "Pimping",
             "Pink",
             "Plastered",
             "Plastic",
+            "Playful",
             "Plonky",
             "Plucky",
             "Plutonic",
             "Poetic",
-            "Polyplastic",
-            "Posh",
             "Pointy",
-            "Precise",
             "Pokey",
             "Polished",
+            "Polyplastic",
+            "Posh",
             "Powerful",
             "Powersaver",
             "Pragmatic",
             "Prancing",
+            "Precise",
             "Precocious",
             "Predatory",
             "Predictive",
@@ -1031,6 +1124,8 @@
             "Proud",
             "Prowly",
             "Prudent",
+            "Psychedelic",
+            "Psychic",
             "Pulchritudinous",
             "Purring",
             "Pyroclastic",
@@ -1038,7 +1133,6 @@
             "Pyrotechnic"
         ],
         "animals": [
-            "Pegasus",
             "Pademelon",
             "Panda",
             "Pangolin",
@@ -1049,6 +1143,7 @@
             "Peacock",
             "Peafowl",
             "Peccary",
+            "Pegasus",
             "Pelican",
             "Penguin",
             "Pheasant",
@@ -1074,7 +1169,11 @@
             "Puffin",
             "Puma",
             "Python"
-        ]
+        ],
+        "version": {
+            "initial_year": 25,
+            "month": 4
+        }
     },
     "q": {
         "adjectives": [
@@ -1088,20 +1187,24 @@
             "Quick",
             "Quiet",
             "Quintessential",
-            "Quixotic",
             "Quirky",
-            "Quivering"
+            "Quivering",
+            "Quixotic"
         ],
         "animals": [
+            "Qantassaurus",
             "Quagga",
             "Quahog",
             "Quail",
-            "Qantassaurus",
-            "Quetzalcoatl",
             "Quetzal",
+            "Quetzalcoatl",
             "Quokka",
             "Quoll"
-        ]
+        ],
+        "version": {
+            "initial_year": 25,
+            "month": 10
+        }
     },
     "r": {
         "adjectives": [
@@ -1115,6 +1218,7 @@
             "Rancid",
             "Randy",
             "Rapid",
+            "Raring",
             "Rational",
             "Raucous",
             "Raunchy",
@@ -1122,6 +1226,7 @@
             "Rebel",
             "Rebellious",
             "Rednosed",
+            "Reminiscent",
             "Resonant",
             "Rhapsy",
             "Ribald",
@@ -1133,16 +1238,14 @@
             "Rowdy",
             "Rugged",
             "Runcible",
-            "Ruthless",
-            "Reminiscent",
-            "Raring"
+            "Ruthless"
         ],
         "animals": [
             "Rabbit",
-            "Raptor",
-            "Rat",
             "Raccoon",
             "Raptor",
+            "Raptor",
+            "Rat",
             "Ratel",
             "Rattlesnake",
             "Raven",
@@ -1150,14 +1253,18 @@
             "Reindeer",
             "Rhea",
             "Rhino",
-            "Robin",
+            "Ringtail",
+            "Roach",
             "Roadrunner",
+            "Robin",
             "Rook",
             "Rooster",
-            "Rottweiler",
-            "Roach",
-            "Ringtail"
-        ]
+            "Rottweiler"
+        ],
+        "version": {
+            "initial_year": 26,
+            "month": 4
+        }
     },
     "s": {
         "adjectives": [
@@ -1244,10 +1351,12 @@
             "Salmon",
             "Saola",
             "Sasquatch",
+            "Satyr",
             "Scallop",
             "Scorpion",
             "Scorpionfish",
             "Scottie",
+            "Seadonkey",
             "Seagull",
             "Seahorse",
             "Seal",
@@ -1263,6 +1372,9 @@
             "Sloth",
             "Snail",
             "Snake",
+            "Snake",
+            "Snapper",
+            "Snapping-Turtle",
             "Snow-Leopard",
             "Spaniel",
             "Sparrow",
@@ -1274,18 +1386,16 @@
             "Starfish",
             "Stingray",
             "Sukko",
-            "Swallow",
-            "Swan",
-            "Swordfish",
-            "Satyr",
-            "Snake",
-            "Snapping-Turtle",
-            "Snapper",
-            "Seadonkey",
             "Suricata",
             "Suricate",
-            "Seahorse"
-        ]
+            "Swallow",
+            "Swan",
+            "Swordfish"
+        ],
+        "version": {
+            "initial_year": 26,
+            "month": 10
+        }
     },
     "t": {
         "adjectives": [
@@ -1388,7 +1498,11 @@
             "Tassie-Thylacine",
             "Tazzy-Thylacine",
             "Tesselated"
-        ]
+        ],
+        "version": {
+            "initial_year": 27,
+            "month": 4
+        }
     },
     "u": {
         "adjectives": [
@@ -1433,7 +1547,11 @@
             "Uguisu",
             "Umbrian",
             "Uintathere"
-        ]
+        ],
+        "version": {
+            "initial_year": 27,
+            "month": 10
+        }
     },
     "v": {
         "adjectives": [
@@ -1465,7 +1583,11 @@
             "Vizcacha",
             "Vole",
             "Vulture"
-        ]
+        ],
+        "version": {
+            "initial_year": 28,
+            "month": 4
+        }
     },
     "w": {
         "adjectives": [
@@ -1500,7 +1622,11 @@
             "Worm",
             "Wren",
             "Weka"
-        ]
+        ],
+        "version": {
+            "initial_year": 28,
+            "month": 10
+        }
     },
     "x": {
         "adjectives": [
@@ -1528,7 +1654,11 @@
             "Xue Bao",
             "Xoloitzcuintle",
             "Xólotl"
-        ]
+        ],
+        "version": {
+            "initial_year": 29,
+            "month": 4
+        }
     },
     "y": {
         "adjectives": [
@@ -1546,7 +1676,11 @@
             "Yak",
             "Yellowjacket",
             "Yeti"
-        ]
+        ],
+        "version": {
+            "initial_year": 29,
+            "month": 10
+        }
     },
     "z": {
         "adjectives": [
@@ -1565,6 +1699,10 @@
             "Zebu",
             "Zorilla",
             "Zorse"
-        ]
+        ],
+        "version": {
+            "initial_year": 30,
+            "month": 4
+        }
     }
 }
