@@ -1,40 +1,30 @@
 export const actual_names = [
-    {
-        "name": "Warthy Warthog",
-        "version":"4.10"
-    },
-    {
-        "name": "Hoary Hedgehod",
-        "version":"5.04"
-    },
-    {
-        "name": "Breezy Badger",
-        "version":"5.10"
-    },
-    {
-        "name": "Dapper Drake",
-        "version":"6.06 LTS"
-    },
-    {
-        "name": "Edgy Eft",
-        "version":"6.10"
-    },
-    {
-        "name": "Feisty Fawn",
-        "version":"7.04"
-    },
-    {
-        "name": "Gutsy Gibbon",
-        "version":"7.10"
-    },
-    {
-        "name": "Hardy Heron",
-        "version":"8.04"
-    },
-    {
-        "name": "Intrepid Ibex",
-        "version":"8.10"
-    }
+    { "name": "Warthy Warthog", "version": "4.10" },
+    { "name": "Hoary Hedgehod", "version": "5.04" },
+    { "name": "Breezy Badger", "version": "5.10" },
+    { "name": "Dapper Drake", "version": "6.06 LTS" },
+    { "name": "Edgy Eft", "version": "6.10" },
+    { "name": "Feisty Fawn", "version": "7.04" },
+    { "name": "Gutsy Gibbon", "version": "7.10" },
+    { "name": "Hardy Heron", "version": "8.04" },
+    { "name": "Intrepid Ibex", "version": "8.10" },
+    { "name": "Jaunty Jackalope", "version": "9.04" },
+    { "name": "Karmic Koala", "version": "9.10" },
+    { "name": "Lucid Lynx", "version": "10.04 LTS" },
+    { "name": "Maverick Meerkat", "version": "10.10" },
+    { "name": "Natty Narwhal", "version": "11.04" },
+    { "name": "Oneiric Ocelot", "version": "11.10" },
+    { "name": "Precise Pangolin", "version": "12.04 LTS" },
+    { "name": "Quantal Quetzal", "version": "12.10" },
+    { "name": "Raring Ringtail", "version": "13.04" },
+    { "name": "Saucy Salamander", "version": "13.10" },
+    { "name": "Trusty Tahr", "version": "14.04 LTS" },
+    { "name": "Utopic Unicorn", "version": "14.10" },
+    { "name": "Vivid Vervet", "version": "15.04" },
+    { "name": "Wily Werewolf", "version": "15.10" },
+    { "name": "Xenial Xerus", "version": "16.04" },
+    { "name": "Yakkety Yak", "version": "16.10" },
+    { "name": "Zesty Zapus", "version": "17.04" }
 ]
 
 export const ubuntu_names = {
