@@ -1,1 +1,2 @@
-ng build -prod -bh "http://ubuntu-name-generator.crespo.com.br" -op docs
+ng build -prod -bh "https://ubuntu-name-generator.crespo.com.br"
+angular-cli-ghpages
