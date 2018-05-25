@@ -5,12 +5,11 @@ import * as pexels from "pexels-api-wrapper";
 import { actual_names, ubuntu_names } from "../names";
 
 @Component({
-  selector: 'app-main',
-  templateUrl: 'main.component.html',
+  selector: 'generator',
+  templateUrl: 'generator.component.html',
   styles: []
 })
-export class MainComponent implements OnInit {
-  title = 'Ubuntu Name Generator';
+export class GeneratorComponent implements OnInit {
   ubuntuName
   ubuntuVersion
   image
@@ -26,8 +25,6 @@ export class MainComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.activatedRoute)
-
 
     this.activatedRoute.params.subscribe(params => {
 
@@ -45,14 +42,14 @@ export class MainComponent implements OnInit {
       this.pexelsClient.search(this.animal, 1, 1).then(
         result => {
           if (result.error) {
-            this.image = ''
+            this.image = 'http://via.placeholder.com/277?text=NO+IMAGE'
             return
           }
           console.log(result)
           if (result.photos.length > 0) {
             this.image = result.photos[0].src.square
           } else {
-            this.image = ''
+            this.image = 'http://via.placeholder.com/277?text=NO+IMAGE'
           }
         }
       )
@@ -61,6 +58,8 @@ export class MainComponent implements OnInit {
   }
 
   generateName() {
+    this.image = 'http://via.placeholder.com/277?text=Loading...'
+
     let charCode = Math.round(Math.random() * 25)
 
     let alphabetLetter = 'abcdefghijklmnopqrstuvwxyz'[charCode]
@@ -82,22 +81,6 @@ export class MainComponent implements OnInit {
     this.ubuntuName = `${this.adjective} ${this.animal}`
 
     this.router.navigate([this.adjective, this.animal, this.ubuntuVersion])
-
-    // this.pexelsClient.search(this.animal, 1, 1).then(
-    //   result => {
-    //     if (result.error) {
-    //       this.image = ''
-    //       return
-    //     }
-    //     console.log(result)
-    //     if (result.photos.length > 0) {
-    //       this.image = result.photos[0].src.square
-    //       this.photographer = result.photos[0].photographer
-    //     } else {
-    //       this.image = ''
-    //     }
-    //   }
-    // )
 
   }
 

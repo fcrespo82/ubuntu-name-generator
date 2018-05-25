@@ -14,10 +14,10 @@ body {
 }
 
 .logo {
-    height: 200pt;
+    height: 100pt;
 }
 
 .realNames {
-    height: 250pt;
+    height: 330pt;
     overflow-y: scroll;
 }

@@ -1,16 +1,6 @@
-<!-- <a href="https://github.com/fcrespo82/ubuntu-name-generator" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a> -->
-
-<div class="row jumbotron jumbotron-fluid">
-    <h1 class="text-white display-4">
-        <img src="/assets/cof_black_hex.svg" alt="Ubuntu Logo" class="logo" />{{title}}
-    </h1>
-</div>
 <section class="row mb-5 pb-5">
     <aside class="col-md-3">
-        <figure class="figure" *ngIf="image != ''">
-            <img [src]="image" [alt]="animal" class="img-thumbnail">
-            <figcaption class="text-right figure-caption">{{photographer}}</figcaption>
-        </figure>
+        <photo [url]="image" [title]="animal" [caption]="photographer"></photo>
     </aside>
     <main class="text-center col-md-6">
         <h1>{{ubuntuName}}</h1>

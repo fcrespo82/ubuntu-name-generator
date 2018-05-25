@@ -4,12 +4,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { RouterModule } from "@angular/router";
 import { appRoutes } from "./app.routes";
-import { MainComponent } from './main/main.component';
+import { GeneratorComponent } from './generator/generator.component';
+import { PhotoComponent } from './photo/photo.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent
+    GeneratorComponent,
+    PhotoComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

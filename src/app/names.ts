@@ -25,7 +25,7 @@ export const actual_names = [
     { "adjective": "Edgy", "animal": "Eft", "version": "6.10" },
     { "adjective": "Dapper", "animal": "Drake", "version": "6.06" },
     { "adjective": "Breezy", "animal": "Badger", "version": "5.10" },
-    { "adjective": "Hoary", "animal": "Hedgehod", "version": "5.04" },
+    { "adjective": "Hoary", "animal": "Hedgehog", "version": "5.04" },
     { "adjective": "Warthy", "animal": "Warthog", "version": "4.10" }
 ]
 
