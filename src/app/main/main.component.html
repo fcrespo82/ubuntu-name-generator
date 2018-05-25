@@ -6,6 +6,12 @@
     </h1>
 </div>
 <section class="row mb-5 pb-5">
+    <aside class="col-md-3">
+        <figure class="figure" *ngIf="image != ''">
+            <img [src]="image" [alt]="animal" class="img-thumbnail">
+            <figcaption class="text-right figure-caption">{{photographer}}</figcaption>
+        </figure>
+    </aside>
     <main class="text-center col-md-6">
         <h1>{{ubuntuName}}</h1>
         <h3 class="text-muted">{{ubuntuVersion}}</h3>
@@ -13,16 +19,13 @@
         <button class="btn btn-primary" (click)="generateName()">Generate</button>
     </main>
     <aside class="col-md-3">
-        <img [src]="image" [alt]="animal" class="img-thumbnail">
-    </aside>
-    <aside class="col-md-3">
         <h4>Real Names:</h4>
-        <ul class="list-group">
-            <li class="list-group-item" *ngFor="let name of realNames">
-                {{name.version}} -
-                <b>{{name.name}}</b>
-            </li>
-        </ul>
+        <div class="list-group realNames">
+                <a *ngFor="let name of realNames" [routerLink]="['',name.adjective,name.animal,name.version]" class="list-group-item list-group-item-action" routerLinkActive="active">
+                    {{name.version}} -
+                    <b>{{name.adjective}} {{name.animal}}</b>
+                </a>
+        </div>
     </aside>
 </section>
 <footer class="navbar fixed-bottom navbar-light bg-light">

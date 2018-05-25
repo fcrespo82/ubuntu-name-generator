@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from "@angular/router";
+import { ActivatedRoute, Router } from "@angular/router";
 import * as pexels from "pexels-api-wrapper";
 import { actual_names, ubuntu_names } from "../names";
 
@@ -17,15 +17,18 @@ export class MainComponent implements OnInit {
   adjective
   animal
   realNames = actual_names
+  photographer
+  pexelsClient = new pexels('563492ad6f91700001000001670c73a98d2e432f952c03b908fb6a49')
 
-  constructor(private client: HttpClient, private activatedRoute: ActivatedRoute) {
+  constructor(private client: HttpClient, private activatedRoute: ActivatedRoute,
+  private router: Router) {
 
   }
 
   ngOnInit() {
     console.log(this.activatedRoute)
 
-    
+
     this.activatedRoute.params.subscribe(params => {
 
       if (!params.adjective) {
@@ -34,13 +37,27 @@ export class MainComponent implements OnInit {
       }
       this.adjective = params.adjective
       this.animal = params.animal
-      
+
       this.ubuntuVersion = `${params.version}`
 
       this.ubuntuName = `${this.adjective} ${this.animal}`
-      this.image = `https://loremflickr.com/320/240/${this.animal}&random=1`
+
+      this.pexelsClient.search(this.animal, 1, 1).then(
+        result => {
+          if (result.error) {
+            this.image = ''
+            return
+          }
+          console.log(result)
+          if (result.photos.length > 0) {
+            this.image = result.photos[0].src.square
+          } else {
+            this.image = ''
+          }
+        }
+      )
     })
-    
+
   }
 
   generateName() {
@@ -64,15 +81,21 @@ export class MainComponent implements OnInit {
     this.ubuntuVersion = `${random_year}.${this.pad2(month)}`
     this.ubuntuName = `${this.adjective} ${this.animal}`
 
-    this.image = `https://loremflickr.com/320/240/${this.animal}&random=1`
+    this.router.navigate([this.adjective, this.animal, this.ubuntuVersion])
 
-    // let pexelsClient = new pexels('API')
-
-    // pexelsClient.search(this.animal, 1, 1).then(
+    // this.pexelsClient.search(this.animal, 1, 1).then(
     //   result => {
-    //     if (result.error) return
+    //     if (result.error) {
+    //       this.image = ''
+    //       return
+    //     }
     //     console.log(result)
-    //     result.photos[0].url
+    //     if (result.photos.length > 0) {
+    //       this.image = result.photos[0].src.square
+    //       this.photographer = result.photos[0].photographer
+    //     } else {
+    //       this.image = ''
+    //     }
     //   }
     // )
 

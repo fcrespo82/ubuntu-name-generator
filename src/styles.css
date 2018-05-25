@@ -18,6 +18,6 @@ body {
 }
 
 .realNames {
-    max-height: 40vh;
+    height: 250pt;
     overflow-y: scroll;
 }
