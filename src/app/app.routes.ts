@@ -5,7 +5,8 @@ import { AboutComponent } from './about/about.component';
 
 
 export const appRoutes: Routes = [
-    { path: ':adjective/:animal/:version', component: GeneratorComponent },
+    { path: 'generator', component: GeneratorComponent },
+    { path: 'generator/:adjective/:animal/:version', component: GeneratorComponent },
     { path: 'about', component: AboutComponent },
-    { path: '**', component: GeneratorComponent }
+    { path: '**', redirectTo: 'generator' }
 ]

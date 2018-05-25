@@ -25,6 +25,7 @@ export class GeneratorComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.image = 'http://via.placeholder.com/277?text=Loading...'
 
     this.activatedRoute.params.subscribe(params => {
 
@@ -80,7 +81,7 @@ export class GeneratorComponent implements OnInit {
     this.ubuntuVersion = `${random_year}.${this.pad2(month)}`
     this.ubuntuName = `${this.adjective} ${this.animal}`
 
-    this.router.navigate([this.adjective, this.animal, this.ubuntuVersion])
+    this.router.navigate(['/generator',this.adjective, this.animal, this.ubuntuVersion])
 
   }
 

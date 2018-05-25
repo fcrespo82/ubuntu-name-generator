@@ -21,3 +21,7 @@ body {
     height: 330pt;
     overflow-y: scroll;
 }
+
+.bg-ubuntu {
+    background-color: #E95420;
+}

@@ -1,4 +1,4 @@
-<section class="row mb-5 pb-5">
+<section class="row">
     <aside class="col-md-3">
         <photo [url]="image" [title]="animal" [caption]="photographer"></photo>
     </aside>
@@ -7,17 +7,18 @@
         <h3 class="text-muted">{{ubuntuVersion}}</h3>
         <br/>
         <button class="btn btn-primary" (click)="generateName()">Generate</button>
+        <div>
+            <a class="small" [routerLink]="['/generator',adjective,animal,ubuntuVersion]">PermaLink</a>
+        </div>
     </main>
     <aside class="col-md-3">
         <h4>Real Names:</h4>
         <div class="list-group realNames">
-                <a *ngFor="let name of realNames" [routerLink]="['',name.adjective,name.animal,name.version]" class="list-group-item list-group-item-action" routerLinkActive="active">
-                    {{name.version}} -
-                    <b>{{name.adjective}} {{name.animal}}</b>
-                </a>
+            <a *ngFor="let name of realNames" [routerLink]="['/generator',name.adjective,name.animal,name.version]" class="list-group-item list-group-item-action"
+                routerLinkActive="active">
+                {{name.version}} -
+                <b>{{name.adjective}} {{name.animal}}</b>
+            </a>
         </div>
     </aside>
 </section>
-<footer class="navbar fixed-bottom navbar-light bg-light">
-    <a class="navbar-brand" [routerLink]="['',adjective,animal,ubuntuVersion]">PermaLink</a>
-</footer>
