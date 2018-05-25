@@ -7,6 +7,7 @@ import { appRoutes } from "./app.routes";
 import { GeneratorComponent } from './generator/generator.component';
 import { PhotoComponent } from './photo/photo.component';
 import { AboutComponent } from './about/about.component';
+import { ShareButtonsModule } from '@ngx-share/buttons';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AboutComponent } from './about/about.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    ShareButtonsModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

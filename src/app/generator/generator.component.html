@@ -8,7 +8,10 @@
         <br/>
         <button class="btn btn-primary" (click)="generateName()">Generate</button>
         <div>
-            <a class="small" [routerLink]="['/generator',adjective,animal,ubuntuVersion]">PermaLink</a>
+            <!-- <a class="small" [routerLink]="['/generator',adjective,animal,ubuntuVersion]">PermaLink</a> -->
+
+            <share-buttons [include]="['facebook','twitter','copy','google','reddit','whatsapp','messenger','telegram','email']"
+                [show]="3" [size]="-4" [description]="'Look at this Ubuntu Name #ubuntuNameGenerator!'"></share-buttons>
         </div>
     </main>
     <aside class="col-md-3">
