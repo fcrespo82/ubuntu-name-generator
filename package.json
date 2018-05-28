@@ -38,6 +38,7 @@
     "@angular/cli": "~1.7.1",
     "@angular/compiler-cli": "^5.2.0",
     "@angular/language-service": "^5.2.0",
-    "typescript": "~2.5.3"
+    "typescript": "~2.5.3",
+    "angular-cli-ghpages": "^0.5.2"
   }
 }

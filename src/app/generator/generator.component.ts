@@ -17,6 +17,7 @@ export class GeneratorComponent implements OnInit {
   animal
   realNames = actual_names
   photographer
+  link
   pexelsClient = new pexels('563492ad6f91700001000001670c73a98d2e432f952c03b908fb6a49')
 
   constructor(private client: HttpClient, private activatedRoute: ActivatedRoute,
@@ -26,7 +27,7 @@ export class GeneratorComponent implements OnInit {
 
   ngOnInit() {
     this.image = 'http://via.placeholder.com/277?text=Loading...'
-    
+    this.link = this.router.url
     this.activatedRoute.params.subscribe(params => {
 
       if (!params.adjective) {
