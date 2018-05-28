@@ -26,7 +26,7 @@ export class GeneratorComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.image = 'http://via.placeholder.com/277?text=Loading...'
+    this.image = 'https://via.placeholder.com/277?text=Loading...'
     this.link = this.router.url
     this.activatedRoute.params.subscribe(params => {
 
@@ -44,13 +44,13 @@ export class GeneratorComponent implements OnInit {
       this.pexelsClient.search(this.animal, 1, 1).then(
         result => {
           if (result.error) {
-            this.image = 'http://via.placeholder.com/277?text=NO+IMAGE'
+            this.image = 'https://via.placeholder.com/277?text=NO+IMAGE'
             return
           }
           if (result.photos.length > 0) {
             this.image = result.photos[0].src.square
           } else {
-            this.image = 'http://via.placeholder.com/277?text=NO+IMAGE'
+            this.image = 'https://via.placeholder.com/277?text=NO+IMAGE'
           }
         }
       )
@@ -59,7 +59,7 @@ export class GeneratorComponent implements OnInit {
   }
 
   generateName() {
-    this.image = 'http://via.placeholder.com/277?text=Loading...'
+    this.image = 'https://via.placeholder.com/277?text=Loading...'
 
     let charCode = Math.round(Math.random() * 25)
 
