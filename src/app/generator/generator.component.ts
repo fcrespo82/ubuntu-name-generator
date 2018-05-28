@@ -26,7 +26,7 @@ export class GeneratorComponent implements OnInit {
 
   ngOnInit() {
     this.image = 'http://via.placeholder.com/277?text=Loading...'
-
+    
     this.activatedRoute.params.subscribe(params => {
 
       if (!params.adjective) {
@@ -46,7 +46,6 @@ export class GeneratorComponent implements OnInit {
             this.image = 'http://via.placeholder.com/277?text=NO+IMAGE'
             return
           }
-          console.log(result)
           if (result.photos.length > 0) {
             this.image = result.photos[0].src.square
           } else {
@@ -82,7 +81,6 @@ export class GeneratorComponent implements OnInit {
     this.ubuntuName = `${this.adjective} ${this.animal}`
 
     this.router.navigate(['/generator',this.adjective, this.animal, this.ubuntuVersion])
-
   }
 
   pad2(number) {
