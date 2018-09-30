@@ -1,4 +1,5 @@
 export const actual_names = [
+    { "adjective": "Cosmic", "animal": "Cuttlefish", "version": "18.10" },
     { "adjective": "Bionic", "animal": "Beaver", "version": "18.04" },
     { "adjective": "Artful", "animal": "Aardvark", "version": "17.10" },
     { "adjective": "Zesty", "animal": "Zapus", "version": "17.04" },
@@ -169,7 +170,8 @@ export const ubuntu_names = {
             "Culpable",
             "Cunning",
             "Cute",
-            "Curt"
+            "Curt",
+            "Cosmic"
         ],
         "animals": [
             "Camel",
@@ -202,7 +204,8 @@ export const ubuntu_names = {
             "Crab",
             "Crane",
             "Crocodile",
-            "Crow"
+            "Crow",
+            "Cuttlefish"
         ],
         "version": { "initial_year": 18, "month": 10 }
     },
