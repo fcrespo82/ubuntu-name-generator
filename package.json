@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build && angular-cli-ghpages --branch gh-pages"
+    "deploy": "ng build --prod && angular-cli-ghpages --branch gh-pages"
   },
   "private": true,
   "dependencies": {
@@ -22,7 +22,10 @@
     "@angular/platform-browser": "6.1.9",
     "@angular/platform-browser-dynamic": "6.1.9",
     "@angular/router": "6.1.9",
-    "@leandrino/pexels-wrapper": "^1.0.1",
+    "@fortawesome/angular-fontawesome": "^0.2.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.5",
+    "@fortawesome/free-brands-svg-icons": "^5.4.0",
+    "@fortawesome/free-solid-svg-icons": "^5.4.0",
     "@ngx-share/button": "^6.0.1",
     "@ngx-share/buttons": "^6.0.1",
     "@ngx-share/core": "^6.0.1",
@@ -41,6 +44,7 @@
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
+    "angular-cli-ghpages": "^0.5.3",
     "codelyzer": "~4.3.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
