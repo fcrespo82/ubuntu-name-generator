@@ -1,6 +1,6 @@
 <section class="row">
     <aside class="col-md-3">
-        <photo [url]="image" [title]="animal" [caption]="photographer"></photo>
+        <!-- <photo [url]="image" [title]="animal" [caption]="photographer"></photo> -->
     </aside>
     <main class="text-center col-md-6">
         <h1>{{ubuntuName}}</h1>
@@ -15,7 +15,7 @@
     <aside class="col-md-3">
         <h4>Real Names:</h4>
         <div class="list-group realNames">
-            <a *ngFor="let name of realNames" [routerLink]="['/generator',name.adjective,name.animal,name.version]" class="list-group-item list-group-item-action"
+            <a *ngFor="let name of realNames; let i = index" [routerLink]="['/generator', i]" class="list-group-item list-group-item-action"
                 routerLinkActive="active">
                 {{name.version}} -
                 <b>{{name.adjective}} {{name.animal}}</b>

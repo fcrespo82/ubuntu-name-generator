@@ -20,7 +20,7 @@ import { ShareButtonsModule } from '@ngx-share/buttons';
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes),
-    ShareButtonsModule.forRoot()
+    ShareButtonsModule.withConfig()
   ],
   providers: [],
   bootstrap: [AppComponent]

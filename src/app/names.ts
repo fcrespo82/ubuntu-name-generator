@@ -1,4 +1,5 @@
 export const actual_names = [
+    { "adjective": "Disco", "animal": "Dingo", "version": "19.04" },
     { "adjective": "Cosmic", "animal": "Cuttlefish", "version": "18.10" },
     { "adjective": "Bionic", "animal": "Beaver", "version": "18.04" },
     { "adjective": "Artful", "animal": "Aardvark", "version": "17.10" },
