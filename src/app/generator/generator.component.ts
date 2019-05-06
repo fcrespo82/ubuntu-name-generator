@@ -37,12 +37,13 @@ export class GeneratorComponent implements OnInit {
         this.animal = real.animal
         this.ubuntuVersion = `${real.version}`
         this.ubuntuName = `${real.adjective} ${real.animal}`
-        // let googleUrl = `https://content.googleapis.com/customsearch/v1?q=${this.animal}&searchType=image&imgSize=large&num=1&cx=000894297801806964922%3Ax3hdmbt024e&key=AIzaSyC9hDu5kAJJfR8D1JkYafbh6nM8X5NwyGI`
-        // this.client.get(googleUrl).toPromise().then((result: any) => {
-        //   this.image = result.items[0].link
-        // }).catch(err => {
-        //   this.image = 'https://via.placeholder.com/1000?text=NO+IMAGE'
-        // })
+
+        let googleUrl = `https://content.googleapis.com/customsearch/v1?q=${this.animal}&searchType=image&imgSize=large&num=1&cx=000894297801806964922%3Ax3hdmbt024e&key=AIzaSyC9hDu5kAJJfR8D1JkYafbh6nM8X5NwyGI`
+        this.client.get(googleUrl).toPromise().then((result: any) => {
+          this.image = result.items[0].link
+        }).catch(err => {
+          this.image = 'https://via.placeholder.com/1000?text=NO+IMAGE'
+        })
       }
       else {
         this.adjective = params.adjective
@@ -50,12 +51,13 @@ export class GeneratorComponent implements OnInit {
         this.ubuntuVersion = `${params.version}`
         this.ubuntuName = `${this.adjective} ${this.animal}`
         this.image = 'https://via.placeholder.com/1000?text=Loading...'
-        // let googleUrl = `https://content.googleapis.com/customsearch/v1?q=${this.animal}&searchType=image&imgSize=large&num=1&cx=000894297801806964922%3Ax3hdmbt024e&key=AIzaSyC9hDu5kAJJfR8D1JkYafbh6nM8X5NwyGI`
-        // this.client.get(googleUrl).toPromise().then((result: any) => {
-        //   this.image = result.items[0].link
-        // }).catch(err => {
-        //   this.image = 'https://via.placeholder.com/1000?text=NO+IMAGE'
-        // })
+
+        let googleUrl = `https://content.googleapis.com/customsearch/v1?q=${this.animal}&searchType=image&imgSize=large&num=1&cx=000894297801806964922%3Ax3hdmbt024e&key=AIzaSyC9hDu5kAJJfR8D1JkYafbh6nM8X5NwyGI`
+        this.client.get(googleUrl).toPromise().then((result: any) => {
+          this.image = result.items[0].link
+        }).catch(err => {
+          this.image = 'https://via.placeholder.com/1000?text=NO+IMAGE'
+        })
       }
     })
   }
