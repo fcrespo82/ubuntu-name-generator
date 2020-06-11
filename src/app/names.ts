@@ -1,4 +1,7 @@
 export const actual_names = [
+    { "adjective": "Groovy", "animal": "Gorila", "version": "20.10" },
+    { "adjective": "Foca", "animal": "Fossa", "version": "20.04" },
+    { "adjective": "Eoan", "animal": "Ermine", "version": "19.10" },
     { "adjective": "Disco", "animal": "Dingo", "version": "19.04" },
     { "adjective": "Cosmic", "animal": "Cuttlefish", "version": "18.10" },
     { "adjective": "Bionic", "animal": "Beaver", "version": "18.04" },
