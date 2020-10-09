@@ -7,7 +7,7 @@ import { appRoutes } from "./app.routes";
 import { GeneratorComponent } from './generator/generator.component';
 import { PhotoComponent } from './photo/photo.component';
 import { AboutComponent } from './about/about.component';
-import { ShareButtonsModule } from '@ngx-share/buttons';
+import { ShareButtonsModule } from 'ngx-sharebuttons/buttons';
 
 @NgModule({
   declarations: [
