@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod --baseHref \"https://`cat src/CNAME`\" && angular-cli-ghpages --branch gh-pages",
+    "deploy": "ng build --prod --baseHref \"https://`cat src/CNAME`\" && angular-cli-ghpages -S --branch gh-pages",
     "postinstall": "ngcc"
   },
   "private": true,

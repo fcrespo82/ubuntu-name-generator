@@ -7,7 +7,7 @@ if [ $OUT -eq 0 ] ; then
     read -p 'Deploy? [y|N] ' deploy
     case $deploy in
         y|Y) echo "Deploying";
-        $SCRIPTPATH/..//node_modules/angular-cli-ghpages/bin/angular-cli-ghpages;;
+        $SCRIPTPATH/../node_modules/angular-cli-ghpages/angular-cli-ghpages;;
         *) echo "Not deploying";;
     esac
 fi
