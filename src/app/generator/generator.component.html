@@ -1,3 +1,10 @@
+<div>
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:title" content="Ubuntu Name Generator">
+    <meta property="og:description" content="#ubuntuNameGenerator">
+    <meta property="og:image" [content]="image">
+    <meta property="og:url" [content]="link">
+</div>
 <section class="row">
     <aside class="col-md-3">
         <photo [url]="image" [title]="animal" [caption]="photographer"></photo>
@@ -8,7 +15,7 @@
         <br/>
         <button class="btn btn-primary" (click)="generateName()">Generate</button>
         <div>
-            <share-buttons [include]="['facebook','twitter','copy','google','reddit','whatsapp','messenger','telegram','email']"
+            <share-buttons [include]="['facebook','twitter','copy','reddit','whatsapp','messenger','telegram','email']"
                 [show]="3" [size]="-4" [description]="'Look at this Ubuntu Name #ubuntuNameGenerator!'"></share-buttons>
         </div>
     </main>
