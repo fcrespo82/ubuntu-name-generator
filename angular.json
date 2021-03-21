@@ -103,6 +103,12 @@
               "**/node_modules/**"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "cname": "ubuntu-name-generator.crespo.com.br"
+          }
         }
       }
     },
