@@ -1,39 +1,3 @@
-export const actual_names = [
-    { "adjective": "Groovy", "animal": "Gorila", "version": "20.10" },
-    { "adjective": "Focal", "animal": "Fossa", "version": "20.04" },
-    { "adjective": "Eoan", "animal": "Ermine", "version": "19.10" },
-    { "adjective": "Disco", "animal": "Dingo", "version": "19.04" },
-    { "adjective": "Cosmic", "animal": "Cuttlefish", "version": "18.10" },
-    { "adjective": "Bionic", "animal": "Beaver", "version": "18.04" },
-    { "adjective": "Artful", "animal": "Aardvark", "version": "17.10" },
-    { "adjective": "Zesty", "animal": "Zapus", "version": "17.04" },
-    { "adjective": "Yakkety", "animal": "Yak", "version": "16.10" },
-    { "adjective": "Xenial", "animal": "Xerus", "version": "16.04" },
-    { "adjective": "Wily", "animal": "Werewolf", "version": "15.10" },
-    { "adjective": "Vivid", "animal": "Vervet", "version": "15.04" },
-    { "adjective": "Utopic", "animal": "Unicorn", "version": "14.10" },
-    { "adjective": "Trusty", "animal": "Tahr", "version": "14.04" },
-    { "adjective": "Saucy", "animal": "Salamander", "version": "13.10" },
-    { "adjective": "Raring", "animal": "Ringtail", "version": "13.04" },
-    { "adjective": "Quantal", "animal": "Quetzal", "version": "12.10" },
-    { "adjective": "Precise", "animal": "Pangolin", "version": "12.04" },
-    { "adjective": "Oneiric", "animal": "Ocelot", "version": "11.10" },
-    { "adjective": "Natty", "animal": "Narwhal", "version": "11.04" },
-    { "adjective": "Maverick", "animal": "Meerkat", "version": "10.10" },
-    { "adjective": "Lucid", "animal": "Lynx", "version": "10.04" },
-    { "adjective": "Karmic", "animal": "Koala", "version": "9.10" },
-    { "adjective": "Jaunty", "animal": "Jackalope", "version": "9.04" },
-    { "adjective": "Intrepid", "animal": "Ibex", "version": "8.10" },
-    { "adjective": "Hardy", "animal": "Heron", "version": "8.04" },
-    { "adjective": "Gutsy", "animal": "Gibbon", "version": "7.10" },
-    { "adjective": "Feisty", "animal": "Fawn", "version": "7.04" },
-    { "adjective": "Edgy", "animal": "Eft", "version": "6.10" },
-    { "adjective": "Dapper", "animal": "Drake", "version": "6.06" },
-    { "adjective": "Breezy", "animal": "Badger", "version": "5.10" },
-    { "adjective": "Hoary", "animal": "Hedgehog", "version": "5.04" },
-    { "adjective": "Warthy", "animal": "Warthog", "version": "4.10" }
-]
-
 export const ubuntu_names = {
     "a": {
         "adjectives": [

@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from "@angular/router";
-import { actual_names, ubuntu_names } from "../names";
+import { ubuntu_names } from "../names";
+import { UbuntuReleaseNamesService } from '../ubuntu-release-names.service';
 
 @Component({
   selector: 'generator',
@@ -14,36 +15,48 @@ export class GeneratorComponent implements OnInit {
   image
   adjective
   animal
-  realNames = actual_names
+  realNames
   photographer
   link
   constructor(private client: HttpClient, private activatedRoute: ActivatedRoute,
-    private router: Router) {
-    this.client = client
+    private router: Router, private realUbuntuNames: UbuntuReleaseNamesService) {
+    this.realUbuntuNames.getNamesCVS().subscribe(realNames => {
+      this.realNames = realNames
+    })
   }
 
   ngOnInit() {
     this.image = 'https://via.placeholder.com/1000?text=Loading...'
     this.link = this.router.url
     this.activatedRoute.params.subscribe(params => {
-      if (!params.adjective && !params.realNameID) {
+      if (!params.adjective && params.realVersion == undefined) {
         this.generateName()
         return
       }
 
-      if (params.realNameID) {
-        let real = this.realNames[Number.parseInt(params.realNameID)]
-        this.adjective = real.adjective
-        this.animal = real.animal
-        this.ubuntuVersion = `${real.version}`
-        this.ubuntuName = `${real.adjective} ${real.animal}`
+      if (params.realVersion) {
+        this.realUbuntuNames.getNamesCVS().subscribe(realNames => {
+          this.realNames = realNames;
+          let real = this.realNames.filter(item => item.version === params.realVersion);
+          // let real = this.realNames[Number.parseInt(params.realVersion)]
+          this.adjective = real[0].adjective
+          this.animal = real[0].animal
+          this.ubuntuVersion = `${real[0].version}`
+          this.ubuntuName = `${real[0].adjective} ${real[0].animal}`
 
-        let googleUrl = `https://content.googleapis.com/customsearch/v1?q=${this.animal}%20animal&searchType=image&imgSize=large&num=1&cx=000894297801806964922%3Ax3hdmbt024e&key=AIzaSyC9hDu5kAJJfR8D1JkYafbh6nM8X5NwyGI`
-        this.client.get(googleUrl).toPromise().then((result: any) => {
-          this.image = result.items[0].link
-        }).catch(err => {
-          this.image = 'https://via.placeholder.com/1000?text=NO+IMAGE'
+          let googleUrl = `https://content.googleapis.com/customsearch/v1?q=Ubuntu%20Wallpaper$20${this.ubuntuName}&searchType=image&imgSize=large&num=1&cx=000894297801806964922%3Ax3hdmbt024e&key=AIzaSyC9hDu5kAJJfR8D1JkYafbh6nM8X5NwyGI`
+          this.client.get(googleUrl).toPromise().then((result: any) => {
+            this.image = result.items[0].link
+          }).catch(err => {
+            if (err.status === 429) {
+              this.image = 'https://via.placeholder.com/1000?text=QUOTA+EXCEEDED'
+            }
+            else {
+              this.image = 'https://via.placeholder.com/1000?text=NO+IMAGE'
+            }
+          })
         })
+
       }
       else {
         this.adjective = params.adjective
@@ -56,7 +69,12 @@ export class GeneratorComponent implements OnInit {
         this.client.get(googleUrl).toPromise().then((result: any) => {
           this.image = result.items[0].link
         }).catch(err => {
-          this.image = 'https://via.placeholder.com/1000?text=NO+IMAGE'
+          if (err.status === 429) {
+            this.image = 'https://via.placeholder.com/1000?text=QUOTA+EXCEEDED'
+          }
+          else {
+            this.image = 'https://via.placeholder.com/1000?text=NO+IMAGE'
+          }
         })
       }
     })

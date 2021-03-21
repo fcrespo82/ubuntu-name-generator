@@ -22,7 +22,7 @@
     <aside class="col-md-3">
         <h4>Real Names:</h4>
         <div class="list-group realNames">
-            <a *ngFor="let name of realNames; let i = index" [routerLink]="['/generator', i]" class="list-group-item list-group-item-action"
+            <a *ngFor="let name of realNames; let i = index" [routerLink]="['/generator', name.version]" class="list-group-item list-group-item-action"
                 routerLinkActive="active">
                 {{name.version}} -
                 <b>{{name.adjective}} {{name.animal}}</b>
