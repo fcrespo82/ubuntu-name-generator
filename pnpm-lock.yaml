@@ -35,7 +35,7 @@ specifiers:
   popper.js: 1.16.1
   rxjs: ^6.6.3
   ts-node: ^8.10.2
-  tslib: ^2.0.0
+  tslib: ^2.4.0
   typescript: ^4
   zone.js: ~0.11.4
 
@@ -59,7 +59,6 @@ dependencies:
   ngx-sharebuttons: 8.1.0_gkb33iqkjqhzjislkoh4ejcaqi
   popper.js: 1.16.1
   rxjs: 6.6.7
-  tslib: 2.4.0
   zone.js: 0.11.8
 
 devDependencies:
@@ -73,6 +72,7 @@ devDependencies:
   codelyzer: 6.0.2_xqnxmkm65c5trwptgawsvmummm
   eslint: 6.8.0
   ts-node: 8.10.2_typescript@4.3.5
+  tslib: 2.4.0
   typescript: 4.3.5
 
 packages:

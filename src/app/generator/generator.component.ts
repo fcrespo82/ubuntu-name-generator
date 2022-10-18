@@ -1,8 +1,8 @@
-import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from "@angular/router";
-import { ubuntu_names } from "../names";
-import { UbuntuReleaseNamesService } from '../ubuntu-release-names.service';
+import {HttpClient} from '@angular/common/http';
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute, Router} from "@angular/router";
+import {ubuntu_names} from "../names";
+import {UbuntuReleaseNamesService} from '../ubuntu-release-names.service';
 
 @Component({
   selector: 'generator',
@@ -38,7 +38,6 @@ export class GeneratorComponent implements OnInit {
         this.realUbuntuNames.getNamesCVS().subscribe(realNames => {
           this.realNames = realNames;
           let real = this.realNames.filter(item => item.version === params.realVersion);
-          // let real = this.realNames[Number.parseInt(params.realVersion)]
           this.adjective = real[0].adjective
           this.animal = real[0].animal
           this.ubuntuVersion = `${real[0].version}`

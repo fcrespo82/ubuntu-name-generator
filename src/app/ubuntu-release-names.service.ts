@@ -1,7 +1,7 @@
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { debounceTime, distinctUntilChanged, filter, map, switchMap } from 'rxjs/operators'
+import {HttpClient} from '@angular/common/http';
+import {Injectable} from '@angular/core';
+import {Observable} from 'rxjs';
+import {map} from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -18,7 +18,7 @@ export class UbuntuReleaseNamesService {
     return this.http.get('https://debian.pages.debian.net/distro-info-data/ubuntu.csv', {
       responseType: 'text'
     }).pipe(
-      map((data: String) => {
+      map((data: string) => {
         let lines = data.split('\n');
         lines.splice(0, 1);
         lines.pop();
@@ -31,9 +31,6 @@ export class UbuntuReleaseNamesService {
           let animal = codename.split(' ')[1];
           return { adjective, animal, version };
         });
-        // nameArray.sort((a, b) => {
-        //   return parseInt(b.version.replace('.', '')) - parseInt(a.version.replace('.', ''));
-        // })
         nameArray.reverse();
         return nameArray;
       })

@@ -1,7 +1,6 @@
-import { Routes } from '@angular/router';
-import { AppComponent } from './app.component';
-import { GeneratorComponent } from './generator/generator.component';
-import { AboutComponent } from './about/about.component';
+import {Routes} from '@angular/router';
+import {AboutComponent} from './about/about.component';
+import {GeneratorComponent} from './generator/generator.component';
 
 
 export const appRoutes: Routes = [
