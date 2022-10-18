@@ -1,34 +1,27 @@
-# This is a basic workflow to help you get started with Actions
+name: GitHub Pages Deploy
 
-name: CI
-
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - name: Checkout repo
     - uses: actions/checkout@v2
       with:
         persist-credentials: false
-
-    - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+    - name: Setup pnpm
+      uses: pnpm/action-setup@v2.2.4
+      with:
+        version: 7
+    - name: Install and Build 🔧
       run: |
-        npm install
-        npm run build
-          
+        pnpm install
+        pnpm run build
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2.0.1
       with:
