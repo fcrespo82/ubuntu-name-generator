@@ -2,9 +2,6 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
-  "cli": {
-    "packageManager": "pnpm"
-  },
   "projects": {
     "ubuntu-name-generator": {
       "root": "",
@@ -35,8 +32,7 @@
             "buildOptimizer": false,
             "sourceMap": true,
             "optimization": false,
-            "namedChunks": true,
-            "aot": true
+            "namedChunks": true
           },
           "configurations": {
             "production": {
